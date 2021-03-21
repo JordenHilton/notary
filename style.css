@@ -17,8 +17,9 @@ body {
   height: auto;
 }
 
-img {
+i {
   padding: 15px;
+  font-size: 15rem;
 }
 
 .displayBox {
