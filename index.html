@@ -16,6 +16,8 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
+    <script src="SearchString.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,7 +30,7 @@
             <h2 class="card-header" id="fileName">Book Title</h2>
             <div class="card-body">
               <div class="displayBox scroll-box" id="fileContent">
-                Select a book on the right
+                Make a Book Selection
               </div>
             </div>
             <div class="card-footer text-muted">
@@ -39,7 +41,76 @@
           </div>
         </div>
         <!--Sidebar Content-->
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <!--Search Widget-->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="keyword"
+                  placeholder="Search for..."
+                />
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">
+                    Search
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="card-footer" id="searchstat"></div>
+          </div>
+          <!--Select a Book Widget-->
+          <div class="card my-4">
+            <h5 class="card-header">Select a Book</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#">Harry Potter</a></li>
+                    <li><a href="#">Alice in Wonderland</a></li>
+                    <li><a href="#">Lord of the Rings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Most Used Words-->
+          <div class="card my-4">
+            <h5 class="card-header">Most Used Words</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-unstyled mb-0" id="mostUsed"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Least Used Words-->
+          <div class="card my-4">
+            <h5 class="card-header">Least Used Words</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-unstyled mb-0" id="leastUsed"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Document Stats-->
+          <div class="card my-4">
+            <h5 class="card-header">Document Stats</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-unstyled mb-0" id="documentStats"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Optional JavaScript -->
